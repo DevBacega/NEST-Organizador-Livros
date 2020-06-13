@@ -6,6 +6,44 @@
 [travis-url]: https://travis-ci.org/nestjs/nest
 [linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
 [linux-url]: https://travis-ci.org/nestjs/nest
+
+# Requisições REST com NEST.JS
+
+## Nest.JS
+
+O Nest.JS é um framework de Node.JS que nos auxiliar a criar rotas,validações,requisições ao banco de dados no modo REST de um jeito mais fácil.
+
+### Instalação:
+Para fazer a instalação do NEST, após instalar o NODE.JS execute os comandos a baixo na pasta do projeto.
+```bash
+$ npm i -g @nestjs/cli
+$ nest new project-name
+```
+
+### Libs de auxilio:
+Iremos usar 2 Libs para auxiliar a fazer a validação dos dados enviados do Front-end, elas são:
+
+     npm install class-validator
+	     - Lib para fazer as validações no DTO.
+     npm install class-transformer
+		 - Lib para auxiliar na criação de tipos para as validações no DTO
+StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+
+### Banco de Dados:
+
+Utilizamos o banco de dados MongoDB para o projeto, e para fazer o vinculo do Nest com o Mongo, instalamos o Mongoose, com os @types do Typescript.
+```bash
+$ npm install --save @nestjs/mongoose mongoose
+$ npm install --save-dev @types/mongoose
+```
+
+## Projeto
+
+Criamos uma API Restful para fazer a organização de livros, iremos cadastras, pesquisar, atualizar e deletar o banco que contem esses livros, no nosso caso o MongoDB.
+
+![enter image description here](https://lh3.googleusercontent.com/moZE0N83QOAioDO1XWbg6rybnHXx9E0oZLTmdUNyZlEa8fSwG1XmQQQkvjboVL-G6zwA81RDeblIwm-I_CvQnwLsFYRxn6SlFEIPQXwigld-BL7WdJAGixdxh3PxP0P0p_Or_ivN1jRABV9BUzjebY-phAvNBtsfWgc2YwwD_v5jZtuKCGPFJpWphICmMcFvxWUB3wYOOVrnaPKV7oI86zuE5K1NtbgplTswv9NPvzPUU6uCoLghNTzuPs6YUJ5PVPG82ekUYeoa2CpQn1gsAJHDCDUmeI3nHUfUfEeGbN7lXoQS720Ltsg23ethQ17Ab_bkHBksxRkEzR4OtYmQd4SFmGzoZ1C1IHmWXVq04BsIwsqcd3MFeyClUxBh5WjjGN6_sM23Hnb1EETV7r_iZoDPD-um7Y4kVI5U-xFlikQqn2IbCj76f_r0B-zECCNg21o5bjyal7ZDRcb09PcOOeQEfu0Y9kf1jTHWGthPiEZHGQ5EjAByMnw3_-2hD6W7-xPDMT5XntOUWiTN_M_xdiw3WBYF8_Vn9I6HENktmIb5KylHR1xUkJK-7EWcHlrdq9pBlSTjuKa7NJHOeSsyb77tB4vSSutHCN3q2wNFceDp3mftBS1MnKhm4BF6xlofn-l-TazNWoUMDj7lvam4cSlbcZCkDNn8ejdwEZdFZPhumDVWr0CueBFzyfTm=w985-h916-no?authuser=1)
+
+
   
   <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
     <p align="center">
@@ -73,3 +111,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
   Nest is [MIT licensed](LICENSE).
+

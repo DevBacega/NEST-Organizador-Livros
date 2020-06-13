@@ -37,7 +37,7 @@ export class BookDTO{
     @Type(() => AuthorDTO)
     @ArrayMinSize(1)
     @IsNotEmptyObject({each : true})
-    //O @ValidateNeste valida todas as classes do DTO 
+    //O @ValidateNest valida todas as classes do DTO 
     //(Na que ele se encontra e se tiver outras importadas, nessas tambem.)
     @ValidateNested({each: true})
     readonly author: AuthorDTO[]
